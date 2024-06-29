@@ -31,16 +31,30 @@ class Post:
         self.content = content
         self.author = author
 
-
-
-
 # ----- 코드 실행 ------
 members = []
 posts = []
 
 # 코드 구현이 필요합니다.
 # 5. 회원 인스턴스를 세개 이상 만들고 `members` 라는 빈리스트에 append를 써서 저장해주세요
-#     1. members 리스트를 돌면서 회원들의 이름을 모두 프린트 해주세요
+#테스트 오케이
+# input을 이용하여 Member 인스턴스 만드는것을 사용자가 터미널에서 할 수 있게 해주세요.
+print("멤버등록")
+name = input("이름: ")
+username = input("아이디: ")
+password = input("패스워드: ")
 
-imsi = Member(name="이영훈", username="leeyougnhun", password="1234")
-imsi.append(imsi)
+Mbrs = Member(name=name, username=username, password=password)
+members.append(Mbrs)
+
+# 1. members 리스트를 돌면서 회원들의 이름을 모두 프린트 해주세요
+for mbr in members:
+    print(mbr.name)
+
+
+# 6. 각각의 회원이 게시글을 세개 이상 작성하는 코드를 만들어주세요.
+# (회원이 세명이명 총 9개 이상의 post 인스턴스가 만들어져야 합니다)
+# 만들어진 게시글 인스턴스들은 posts 빈리스트에 append를 써서 저장해주세요
+#     1. for 문을 돌면서 특정유저가 작성한 게시글의 제목을 모두 프린트 해주세요
+#     2. for문을 돌면서 ‘특정 단어’가 content에 포함된 게시글의 제목을 모두 프린트 해주세요
+
