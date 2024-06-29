@@ -21,8 +21,17 @@ class Member:
 
 
 class Post:
-    # TODO : 코드 구현이 필요합니다.
-    pass
+    # 코드 구현이 필요합니다.
+    # Post 클래스에는 다음과 같은 속성을 가지고 있어야 합니다.
+    #     - 게시물 제목 (**`title`**)
+    #     - 게시물 내용 (**`content`**)
+    #     - 작성자 (**`author`**) : 회원의 `username` 이 저장되어야 함!
+    def __init__(self, title, body, author):
+        self.title = title
+        self.body = body
+        self.author = author
+
+
 
 
 # ----- 코드 실행 ------
