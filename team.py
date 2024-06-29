@@ -26,9 +26,9 @@ class Post:
     #     - 게시물 제목 (**`title`**)
     #     - 게시물 내용 (**`content`**)
     #     - 작성자 (**`author`**) : 회원의 `username` 이 저장되어야 함!
-    def __init__(self, title, body, author):
+    def __init__(self, title, content, author):
         self.title = title
-        self.body = body
+        self.content = content
         self.author = author
 
 
