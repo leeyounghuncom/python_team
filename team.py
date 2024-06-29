@@ -13,9 +13,11 @@ class Member:
         self.username = username
         self.password = password
 
+    # 3. **`Member`** 클래스에는 다음과 같은 메소드를 가지고 있어야 합니다.
+    #     - 회원 정보를 print해주는 `display` (회원이름과 아이디만 보여주고 비밀번호는 보여줘서는 안됩니다!)
     def display(self):
-        # TODO : 코드 구현이 필요합니다.
-        pass
+        # 코드 구현이 필요합니다.
+        return f"Name: {self.name}, Username: {self.username}"
 
 
 class Post:
