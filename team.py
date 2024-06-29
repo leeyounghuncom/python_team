@@ -1,4 +1,6 @@
 #예제 코드 복붙 이렇게 해서 작업 시작 해보자
+# 3. (심화)비밀번호 해싱이 무엇인지 공부한 후 hashlib 라이브러리를 써서 회원 비밀번호를 해시화하여 저장하게 해주세요.
+import hashlib
 
 # ----- 코드 정의 ------
 # 1. Member 클래스와 Post 클래스를 정의하세요.
@@ -11,7 +13,8 @@ class Member:
     def __init__(self, name, username, password):
         self.name = name
         self.username = username
-        self.password = password
+        self.password = hashlib.sha256(b"password").hexdigest() # b는 (normally bytes) using the
+        #https://docs.python.org/ko/3/library/hashlib.html
 
     # 3. **`Member`** 클래스에는 다음과 같은 메소드를 가지고 있어야 합니다.
     #     - 회원 정보를 print해주는 `display` (회원이름과 아이디만 보여주고 비밀번호는 보여줘서는 안됩니다!)
