@@ -38,4 +38,9 @@ class Post:
 members = []
 posts = []
 
-# TODO : 코드 구현이 필요합니다.
+# 코드 구현이 필요합니다.
+# 5. 회원 인스턴스를 세개 이상 만들고 `members` 라는 빈리스트에 append를 써서 저장해주세요
+#     1. members 리스트를 돌면서 회원들의 이름을 모두 프린트 해주세요
+
+imsi = Member(name="이영훈", username="leeyougnhun", password="1234")
+imsi.append(imsi)
